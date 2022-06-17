@@ -5,7 +5,7 @@ body {
   h1 {
     color: #025157;
     text-align: center;
-    
+    font-size: 100px;
   }
   
   p {
@@ -40,6 +40,14 @@ body {
     height: 100%;
     vertical-align: middle;
     font-family: sans-serif;
+  }
+
+  .fits-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fffbf7;
   }
   
   .logo {
@@ -84,6 +92,72 @@ body {
 }
 
   .main{
-    margin-top: 140px;
+    margin-top: 285px;
     text-align: center;
+  }
+
+  .publish {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px
+  }
+  
+  .publish h2 {
+    font-size: 40px;
+    line-height: 48px;
+    color: #025157;
+  }
+  
+  .publish > p {
+    font-size: 16px;
+    color: #343434;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .publish > form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .publish > form p {
+    color: #025157;
+    margin-right: 18px;
+  }
+
+  .publish > form button {
+    padding: 20px;
+    border-radius: 0px 15px 15px 0px;
+    font-size: 15px;
+    border-left: none;
+  }
+
+  .publish > form input {
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px 0px 0px 15px;
+    font-size: 15px;
+    border-right: none;
+  }
+
+  .publish-inputs{
+    display: flex;
+  }
+  .promo{
+    display: flex;
+    width: 70%;
+    align-items: center;
+    margin: 100px auto;
+  }
+
+  .video-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-img img{
+    width: 120px;
+    margin-top: 10px;
   }
