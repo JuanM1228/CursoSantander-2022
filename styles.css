@@ -245,6 +245,18 @@ iframe {
   .publish > form > div > input {
     width: 65%;
   }
+
+
+  .features {
+    margin-top: 5%;
+    background-color: #025157;
+    padding: 5% 10%;
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    height: 660px;
+    /* grid-template-rows: repeat(2, 1fr); */
+    grid-template: repeat(4, 1fr) / repeat(1, 1fr);
+  }
 }
 
 /** dispositivos pequeños en vista landscape (horizontal) */
