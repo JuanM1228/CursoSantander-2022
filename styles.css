@@ -1,4 +1,4 @@
-  body {
+ body {
     background-color: #fffbf7;
     display: inline-block;
   }
@@ -84,10 +84,6 @@
     text-align: right;
     font-size: 14px;
     font-weight: 600;
-  }
-
-  .actions > *{
-    margin: 0 10px;
   }
 
   .actions a {
@@ -185,11 +181,23 @@
     text-align: left;
   }
 
+/** dispositivos pequeños en vista landscape (horizontal) */
+@media (min-width: 576px) and (max-width: 767px) {
+  
+}
 
-  @media (max-width: 575px) {
+/** dispositivos medianos (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
 
-  }
+}
 
-  @media (min-width: 576px) and (max-width: 767px){
+/** dispositivos grandes (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
 
-  }
+}
+
+/** dispositivos extra grandes (monitores grandes, tvs) */
+@media (min-width: 1200px) {
+
+}
+
