@@ -1,76 +1,84 @@
-body {
+  body {
     background-color: #fffbf7;
+    display: inline-block;
   }
 
-
-  h1 {
-    color: #025157;
-    text-align: center;
-    font-size: 60px;
-  }
-  
-  p {
-    color: #8b8b8bcc;
-    font-family: Verdana;
-    font-size: 20px;
-  }
-  
-  button {
-    color: #fff;
-    background-color: #025157;
-  }
-  
-  .header {
-    margin: 40px 20px 0;
-    font-size: 0;
-    z-index: 0;
+  .navbar{
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
   }
   
   li {
     margin: 0 25px;
-    display: inline;
-    color: #025157;
     font-weight: bold;
-    font-family: 'Alegreya Sans', sans-serif;
     font-size: 20px;
   }
-  
-  .header > * {
-    display: inline-block;
-    font-size: 16px;
-    line-height: 45px;
-    height: 100%;
-    vertical-align: middle;
-    font-family: sans-serif;
+
+  .forms{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  .fits-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: #fffbf7;
+  .forms > input{
+    border-color: black;
+    border-right: none;
+    width: 18rem;
+    padding: 10px;
+    border-radius: 15px 0px 0px 15px;
+    background-color: #fffbf7;
+  }
+
+  .forms > button{
+    border-color: black;
+    padding: 10px;
+    width: 8rem;
+    border-radius: 0 15px 15px 0;
+    background-color: #025157;
+    color: #fffbf7;
+  }
+
+  .img-matcha{
+    width: 20%;
   }
   
-  .logo {
-    width: 15%;
-    
+  .logo{
+    width: 200px;
   }
-  
+
   .logo > img {
     width: 15%;
-    vertical-align: center;
   }
-  
-  .navbar {
-    width: 70%;
-    height: 45px;
-    text-align: center;
-    color: #025157;
-    font-weight: 500;
 
+  .header {
+    margin-top: 100px;
+    text-align: center;
+  }
+
+  header > h1 {
+    color: #025157;
+    font-size: 60px;
+    margin-bottom: 30px;
   }
   
+  header > p {
+    color: #545353f8;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    margin: 20px;
+   
+  }
+
+  header > figure {
+    margin-top: 30px;
+    display: inline-block;
+    margin: none;
+  }
+
+  .main{
+    margin-top: 100px;
+  }
+
   .actions {
     width: 15%;
     text-align: right;
@@ -82,20 +90,15 @@ body {
     margin: 0 10px;
   }
 
-.actions a {
-    color: #67b54b;
-}
+  .actions a {
+      color: #67b54b;
+  }
 
-.actions button {
+  .actions button {
     padding: 12px 14px;
     border-radius: 5px;
     background-color: #67b54b;
     border-color: transparent;
-}
-
-  .main{
-    margin-top: 285px;
-    text-align: center;
   }
 
   .publish {
@@ -127,8 +130,6 @@ body {
     color: #025157;
     margin-right: 18px;
   }
-  
-
 
   .publish > form button {
     padding: 20px;
@@ -185,69 +186,10 @@ body {
   }
 
 
-@media (max-width: 575px) {
-  .header{
-    height: 10px;
+  @media (max-width: 575px) {
+
   }
 
-  .actions{
-    display: none;
+  @media (min-width: 576px) and (max-width: 767px){
+
   }
-
-
-  .navbar{
-    display: none;
-  }
-
-  h1{
-    font-size: 30px;
-  }
-
-  .main{
-    margin-top: 130px;
-    text-align: center;
-  }
-
-  .banner > img{
-    width: 100%;
-  }
-
-  .publish > form{
-    flex-direction: column;
-  }
-
-  .publish > form > div{
-    height: 50px;
-    margin-top: 10px;
-  }
-
-  .publish > form > div >input {
-    width: 65%;
-    align-items: center;
-  }
-
-  .publish-inputs{
-    align-items: center;
-  }
-
-  .promo{
-    flex-direction: column;
-    max-width: 90%;
-  }
-
-  .publish > p{
-    text-align: justify;
-  }
-
-  .features {
-    grid-template: repeat(4, 1fr) / 1fr;
-  }
-
-  .features img{
-    display: none;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 767px){
-
-}
