@@ -1,6 +1,7 @@
  body {
     background-color: #fffbf7;
-    display: inline-block;
+    display: block;
+    vertical-align: center;
   }
 
   .navbar{
@@ -14,13 +15,13 @@
     font-size: 20px;
   }
 
-  .forms{
+  .form-header{
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .forms > input{
+  .form-header > input{
     border-color: black;
     border-right: none;
     width: 18rem;
@@ -29,7 +30,7 @@
     background-color: #fffbf7;
   }
 
-  .forms > button{
+  .form-header > button{
     border-color: black;
     padding: 10px;
     width: 8rem;
@@ -38,10 +39,6 @@
     color: #fffbf7;
   }
 
-  .img-matcha{
-    width: 20%;
-  }
-  
   .logo{
     width: 200px;
   }
@@ -69,10 +66,14 @@
    
   }
 
-  header > figure {
-    margin-top: 30px;
-    display: inline-block;
-    margin: none;
+  header > figure{
+    display: flex;
+    justify-content: center;
+  }
+
+  header > figure > img {
+    width: 80%;
+
   }
 
   .main{
@@ -146,6 +147,7 @@
     display: flex;
 
   }
+
   .promo{
     display: flex;
     width: 70%;
@@ -182,8 +184,45 @@
   }
 
 /** dispositivos pequeños en vista landscape (horizontal) */
-@media (min-width: 576px) and (max-width: 767px) {
-  
+@media (min-width: 300px) and (max-width: 767px) {
+  header > figure > img{
+    width: 70%;
+  }
+
+  .form-header > input{
+    border-color: black;
+    border-right: none;
+    width: 10rem;
+    padding: 10px;
+    border-radius: 15px 0px 0px 15px;
+    background-color: #fffbf7;
+  }
+
+  .form-header > button{
+    border-color: black;
+    padding: 10px;
+    width: 8rem;
+    border-radius: 0 15px 15px 0;
+    background-color: #025157;
+    color: #fffbf7;
+  }
+
+  .promo{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: center;
+    margin: 100px auto;
+  }
+
+  .features {
+    display: grid;
+    padding: 5% 10%;
+    background-color: #025157;
+    grid-template: repeat(4, 1fr) / 1fr;
+    gap: 30px;
+  }
+
 }
 
 /** dispositivos medianos (tablets) */
