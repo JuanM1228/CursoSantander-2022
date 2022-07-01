@@ -1,0 +1,99 @@
+/** */
+.blog .title, .card-body .card-title {
+  font-family: "Quicksand", sans-serif;
+  color: #135359;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.blog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  max-width: unset;
+  padding: 5% 10%;
+}
+.blog .title {
+  color: #025157;
+}
+.blog .process-list {
+  margin-top: 40px;
+  margin-bottom: 36px;
+}
+.blog .process-list .process {
+  display: flex;
+  margin-bottom: 25px;
+}
+.blog .process-list .process > div > h3 {
+  color: #025157;
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 30px;
+}
+.blog .process-list .process > div > p {
+  color: #135359;
+  margin: 0;
+}
+.blog .process-list .process .process-icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  text-align: center;
+}
+.blog .process-list .process .process-icon img {
+  height: 100%;
+}
+.blog .row button {
+  align-self: center;
+  height: auto;
+  font-family: "Quicksand", sans-serif;
+  background-color: #025157;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  width: 180px;
+  margin-bottom: 15px;
+}
+.blog .col {
+  display: flex;
+  flex-direction: column;
+}
+.blog .col .card {
+  border-radius: 20px 20px 0 0;
+}
+
+.card-img-top {
+  border-radius: 20px 20px 0 0;
+}
+
+.card-body .card-title {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.card-body .metadata {
+  font-family: "Quicksand", sans-serif;
+}
+.card-body .metadata .category {
+  color: #67b54b;
+}
+.card-body .metadata .read-time {
+  color: #979797;
+}
+.card-body .card-text {
+  font-family: "Quicksand", sans-serif;
+}
+.card-body .card-text .read-more {
+  color: #67b54b;
+}
+.card-body .card-text .read-more > a {
+  text-decoration: underline;
+}
+.card-body .author > img {
+  width: 50px;
+  border-radius: 50px;
+  margin-right: 20px;
+}
+
+/*# sourceMappingURL=output.css.map */

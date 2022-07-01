@@ -1,0 +1,129 @@
+@use 'global' as *;
+
+.blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    max-width: unset;
+    padding: 5% 10%;
+
+    .title {
+        @extend %base-title;
+        color: $dark-green-title
+    }
+
+    .process-list {
+        margin-top: 40px;
+        margin-bottom: 36px;
+
+        .process {
+            display: flex;
+            margin-bottom: 25px;
+
+            &>div {
+                &>h3 {
+                    color: $dark-green-title;
+                    margin-bottom: 0;
+                    font-weight: 500;
+                    font-size: 30px;
+                }
+
+                &>p {
+                    color: $dark-green-text;
+                    margin: 0;
+                }
+            }
+
+            .process-icon{
+                width: 60px;
+                height: 60px;
+                margin-right: 10px;
+                text-align: center;
+
+                img{
+                    height: 100%;
+                }
+
+            }
+
+        }
+    }
+
+    .row{
+        button{
+            align-self: center;
+            height: auto;
+            font-family: $font-page;
+            background-color: $dark-green-title;
+            border-radius: 8px;
+            color: white;
+            font-weight: bold;
+            padding: 12px;
+            width: 180px;
+            margin-bottom: 15px;
+        }
+    }
+
+    .col{
+        display: flex;
+        flex-direction: column;
+
+        .card{
+            border-radius: 20px 20px 0 0;
+        }
+    }
+}
+
+
+
+
+
+.card-img-top{
+    border-radius: 20px 20px 0 0;
+}
+
+.card-body{
+   
+    .card-title{
+        @extend %base-title;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .metadata{
+        font-family: $font-page;
+
+        .category{
+            color: $light-green;
+        }
+
+        .read-time{
+            color: $light-gray;
+        }
+    }
+
+    .card-text{
+        font-family: $font-page;
+        
+
+        .read-more{
+            color: $light-green;
+            & > a{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .author{
+        & > img{
+            width: 50px;
+            border-radius: 50px;
+            margin-right: 20px
+        }
+    }
+
+
+
+
+}

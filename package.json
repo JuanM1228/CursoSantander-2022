@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/JuanM1228/CursoSantander-2022#readme",
   "dependencies": {
-    "saas": "^1.0.0"
+    "saas": "^1.0.0",
+    "sass": "^1.53.0"
   }
 }
