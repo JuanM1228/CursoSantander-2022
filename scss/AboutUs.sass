@@ -1,0 +1,77 @@
+@use 'global' as *
+
+.top-features
+    background-color: #fffbf7
+    font-family: $font-page
+    margin-top: 30px
+    padding: 100px
+
+    .header--alt
+        text-align: center
+        font-size: 5rem
+    
+    p
+        text-align: center
+
+    .row
+        .feature__cont
+            display: flex
+            flex-direction: column
+            .feature__img
+                img
+                    width: 100%
+                    border-radius: 10px
+            
+            .feature__title__anchor
+                margin-top: 30px
+                text-decoration: none
+                .feature__title
+                    text-align: center
+                    color: $dark-green-title
+                    font-weight: bold
+                    text-decoration: none
+                    transition: color .5s ease-in-out
+                    transition: font-size .3s
+                .feature__title:hover
+                    color: $light-green
+                    font-size: 30px
+
+            p
+                font-size: 20px
+                margin-bottom: 50px
+                margin-top: 30px
+        
+        .flecha
+            margin: 50px auto
+            height: 130px
+            width: 130px
+            margin-bottom: 35px
+            .flecha-contenedor
+                position: relative
+                height: 150px
+                width: 150px
+                margin-bottom: 65px
+                .flecha-animada
+                    position: absolute
+                    animation-name: up-and-down
+                    animation-duration: 4s
+                    animation-timing-function: linear
+                    animation-iteration-count: infinite
+                    animation-direction: alternate
+                    height: 130px
+                    width: 130px
+                    img
+                        width: 100px
+                        transform: rotate(-90deg)
+                    
+                    @keyframes up-and-down
+                        0%
+                            top: 0
+                        25%
+                            top: -20px
+                        50%
+                            top: -40px
+                        75%
+                            top: -20px
+                        100%
+                            top: 0
